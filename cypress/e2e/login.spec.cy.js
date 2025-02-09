@@ -1,17 +1,27 @@
 describe('Orange HRM Tests ', () => {
+
+  const selectorsList = {
+
+    usernameField:":nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input",
+    passwordField:":nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input",
+    loginbutton:".oxd-button",
+    sectionTitleTopBar:".oxd-topbar-header-breadcrumb > .oxd-text",
+    wrongCredentialAlert:".oxd-alert"
+  }
+
   it('Login - Success', () => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Admin")
-    cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type("admin123")
-    cy.get('.oxd-button').click()
+    cy.get(selectorsList.usernameField).type("Admin")
+    cy.get(selectorsList.passwordField).type("admin123")
+    cy.get(selectorsList.loginbutton).click()
     cy.location('pathname').should('equal','/web/index.php/dashboard/index')
-    cy.get('.oxd-topbar-header-breadcrumb > .oxd-text').contains('Dashboard')
+    cy.get(selectorsList.sectionTitleTopBar).contains('Dashboard')
   })
   it('Login - Fail', () => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Test")
-    cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type("Test")
-    cy.get('.oxd-button').click()
-    cy.get('.oxd-alert')
+    cy.get(selectorsList.usernameField).type("Test")
+    cy.get(selectorsList.passwordField).type("Test")
+    cy.get(selectorsList.loginbutton).click()
+    cy.get(selectorsList.wrongCredentialAlert)
   })
 })
