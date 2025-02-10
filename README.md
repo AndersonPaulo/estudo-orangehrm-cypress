@@ -1,1 +1,1 @@
-#My Cypress Project
+# My Cypress Automation
