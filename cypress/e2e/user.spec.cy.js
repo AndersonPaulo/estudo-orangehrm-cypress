@@ -17,9 +17,16 @@ describe('Orange HRM Tests ', () => {
     
     LoginPage.accessLoginPage()
     LoginPage.LoginWithUser(userData.userSuccess.username,userData.userSuccess.password)    
+   
     DashboardPage.checkDashboard()
+    
     Menupage.accessMyInfo()
-    MyInfoPage.navegationInfo()
+   
+    MyInfoPage.fillPersonalDetails('Firstnametest','MidlenameTest','LastmameTest')
+    MyInfoPage.fillEmployeeDetails('555252','652475','Ad565C','2025-10-10')
+    MyInfoPage.fillStatus('1988-08-21')
+    MyInfoPage.saveForm()
+
  
 
   })
