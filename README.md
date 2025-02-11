@@ -19,4 +19,8 @@ npx cypress open
 
 # Run the automation by comand line
 npx cypress run
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 734ccdfd9cbce22b2582e5ebe02bb57c78a25006
