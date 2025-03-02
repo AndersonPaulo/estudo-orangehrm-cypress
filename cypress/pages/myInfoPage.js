@@ -14,7 +14,9 @@ class MyInfoPage {
                 secondItemSelect:".oxd-select-dropdown > :nth-child(15)",
                 thirdItemSelect:".oxd-select-dropdown > :nth-child(2)",
                 checkGenerate: ".oxd-radio-input",
-                submitbutton:"[type='submit']"
+                submitbutton:"[type='submit']",
+                addButtom:".oxd-button--text",
+                browserButton:".oxd-file-button"
             }
 
         return selector
@@ -48,8 +50,11 @@ class MyInfoPage {
         }
         saveForm(){
             cy.get(this.selectorsList().submitbutton).eq(0).click()
-            cy.get('body').should('contain','Successfully Updated')
+            cy.get(this.selectorsList().submitbutton).eq(1).click()
+            cy.get('.oxd-toast')
             cy.get('.oxd-toast-close')
+            cy.get(this.selectorsList().addButtom).click()
+            cy.get(this.selectorsList().browserButton).click()
         }
 
    
