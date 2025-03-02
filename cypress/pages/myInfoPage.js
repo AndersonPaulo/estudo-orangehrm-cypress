@@ -16,7 +16,9 @@ class MyInfoPage {
                 checkGenerate: ".oxd-radio-input",
                 submitbutton:"[type='submit']",
                 addButtom:".oxd-button--text",
-                browserButton:".oxd-file-button"
+                browserButton:".oxd-file-button",
+                inputFileButton:".oxd-file-input-div",
+                textAreaField: ".oxd-textarea"
             }
 
         return selector
@@ -55,6 +57,8 @@ class MyInfoPage {
             cy.get('.oxd-toast-close')
             cy.get(this.selectorsList().addButtom).click()
             cy.get(this.selectorsList().browserButton).click()
+            cy.get(this.selectorsList().inputFileButton).selectFile('../../bruite.png')
+            cy.get(this.selectorsList().textAreaField).type("skdjlajdajdçlasjdçasjdçsajdçasljdçlasjd")
         }
 
    
