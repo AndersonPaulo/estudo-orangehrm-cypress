@@ -3,6 +3,7 @@ import loginPage from '../pages/loginPage.js'
 import dashboardPage from '../pages/dashboardPage.js'
 import myInfoPage from '../pages/myInfoPage.js'
 import menuPage from '../pages/menuPage.js'
+import changePicturePage from '../pages/changePicturePage.js'
 
 const Chance = require('chance')
 const chance = new Chance()
@@ -11,6 +12,7 @@ const LoginPage = new loginPage()
 const DashboardPage = new dashboardPage()
 const MyInfoPage = new myInfoPage()
 const Menupage = new menuPage()
+const ChangePicture = new changePicturePage()
 
 describe('Orange HRM Tests ', () => {
 
@@ -24,10 +26,10 @@ describe('Orange HRM Tests ', () => {
     DashboardPage.checkDashboard()
     
     Menupage.accessMyInfo()
-   
+    ChangePicture.changePicture()
     MyInfoPage.fillPersonalDetails(chance.first(),chance.last(),chance.last())
     MyInfoPage.fillEmployeeDetails(chance.string({ length: 5 }),chance.string({ length: 5 }),chance.string({ length: 5 }),'2025-10-10')
-    MyInfoPage.fillStatus('1988-21-08')
+    MyInfoPage.fillStatus('1988-08-21')
     MyInfoPage.saveForm()
 
  
