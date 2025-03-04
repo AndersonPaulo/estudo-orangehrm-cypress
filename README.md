@@ -1,26 +1,51 @@
-# My Cypress Automation
+Projeto de Estudos - Testes Automatizados com Cypress
 
-This projects utilizes Cypress to automate the testing of a login feature and a user update
-feature.Cypress is a JavaScript-based end-to-end testing framework that allows develops to write tests and 
-execute them in a real browser.
+Este repositório tem como objetivo o estudo e a prática de testes automatizados utilizando o framework Cypress no site OrangeHRM.
 
-## Installation
-```bash
+Objetivo
+
+O objetivo deste projeto é desenvolver e validar casos de testes para as seguintes funcionalidades do sistema:
+
+Login: Testar diferentes cenários de autenticação, incluindo login válido, inválido e outras possibilidades.
+
+Página "My Info": Testar a exibição e edição das informações cadastrais dos usuários dentro da plataforma.
+
+Tecnologias Utilizadas
+
+Cypress - Para automação de testes end-to-end.
+
+JavaScript - Linguagem utilizada nos testes.
+
+Page Objects - Padrão de design utilizado para melhor organização e reutilização de código nos testes.
+
+OrangeHRM - Plataforma web utilizada como base para os testes.
+
+
+
+
+
+Como Executar os Testes
+
+Clone este repositório:
+
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+Acesse o diretório do projeto:
+
+cd seu-repositorio
+
+Instale as dependências do projeto:
+
 npm install
-```
-> **NOTE:**
->
-> it is necessary to have **node** installed
 
-## Running
-```bash
-# You open the Cypress UI
+Execute os testes em modo interativo:
+
 npx cypress open
 
-# Run the automation by comand line
+Para executar os testes diretamente no terminal:
+
 npx cypress run
-<<<<<<< HEAD
-```
-=======
-```
->>>>>>> 734ccdfd9cbce22b2582e5ebe02bb57c78a25006
+
+Contribuição
+
+Este repositório é destinado a estudos, portanto, contribuições e sugestões são sempre bem-vindas!
