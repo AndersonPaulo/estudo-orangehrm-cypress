@@ -1,7 +1,7 @@
 import userData from '../../fixtures/user-Data.json'
 import loginPage from '../../pages/loginPage.js'
 import dashboardPage from '../../pages/dashboardPage.js'
-import myInfoPage from '../../pages/myInfoPage.js'
+import myInfoPagePersonal from '../../pages/myInfoPagePersonal.js'
 import menuPage from '../../pages/menuPage.js'
 import changePicturePage from '../../pages/changePicturePage.js'
 
@@ -10,15 +10,15 @@ const chance = new Chance()
 
 const LoginPage = new loginPage()
 const DashboardPage = new dashboardPage()
-const MyInfoPage = new myInfoPage()
+const MyInfoPagepersonal = new myInfoPagePersonal()
 const Menupage = new menuPage()
 const ChangePicture = new changePicturePage()
 
-describe('Orange HRM Tests ', () => {
+describe('Preenchimento dos dados pessoais do usuário ', () => {
 
  
 
-  it('User info Update - Success', () => {
+  it('User Details Personal Update - Success', () => {
     
     LoginPage.accessLoginPage()
     LoginPage.LoginWithUser(userData.userSuccess.username,userData.userSuccess.password)    
@@ -27,10 +27,10 @@ describe('Orange HRM Tests ', () => {
     
     Menupage.accessMyInfo()
     ChangePicture.changePicture()
-    MyInfoPage.fillPersonalDetails(chance.first(),chance.last(),chance.last())
-    MyInfoPage.fillEmployeeDetails(chance.string({ length: 5 }),chance.string({ length: 5 }),chance.string({ length: 5 }),'2025-10-10')
-    MyInfoPage.fillStatus('1988-08-21')
-    MyInfoPage.saveForm()
+    MyInfoPagepersonal.fillPersonalDetails(chance.first(),chance.last(),chance.last())
+    MyInfoPagepersonal.fillEmployeeDetails(chance.string({ length: 5 }),chance.string({ length: 5 }),chance.string({ length: 5 }),'2025-10-10')
+    MyInfoPagepersonal.fillStatus('1988-08-21')
+    MyInfoPagepersonal.saveForm()
 
  
 

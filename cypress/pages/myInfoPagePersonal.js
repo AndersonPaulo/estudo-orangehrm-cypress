@@ -1,4 +1,4 @@
-class MyInfoPage {
+class MyInfoPagePersonal {
 
     selectorsList() {
             const selector = {
@@ -66,11 +66,11 @@ class MyInfoPage {
             cy.get(this.selectorsList().addButtom).click()
             cy.get(this.selectorsList().browserButton).click()
             cy.get(this.selectorsList().inputFileButton).eq(0).selectFile('bruite.png',{action: "select",force: true})
-            cy.get(this.selectorsList().textAreaField).type("skdjlajdajdçlasjdçasjdçsajdçasljdçlasjd")
+            cy.get(this.selectorsList().textAreaField).type("this is a perfect moment")
             cy.get(this.selectorsList().submitbutton).eq(2).click()
         }
 
    
 }
 
-export default MyInfoPage
+export default MyInfoPagePersonal
