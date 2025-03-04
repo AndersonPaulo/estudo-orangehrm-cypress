@@ -1,9 +1,9 @@
-import userData from '../fixtures/user-Data.json'
-import loginPage from '../pages/loginPage.js'
-import dashboardPage from '../pages/dashboardPage.js'
-import myInfoPage from '../pages/myInfoPage.js'
-import menuPage from '../pages/menuPage.js'
-import changePicturePage from '../pages/changePicturePage.js'
+import userData from '../../fixtures/user-Data.json'
+import loginPage from '../../pages/loginPage.js'
+import dashboardPage from '../../pages/dashboardPage.js'
+import myInfoPage from '../../pages/myInfoPage.js'
+import menuPage from '../../pages/menuPage.js'
+import changePicturePage from '../../pages/changePicturePage.js'
 
 const Chance = require('chance')
 const chance = new Chance()

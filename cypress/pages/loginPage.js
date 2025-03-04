@@ -7,6 +7,8 @@ class LoginPage{
             passwordField:"[name='password']",
             loginbutton:".orangehrm-login-button",
             wrongCredentialAlert:".oxd-alert",
+            requiredAlertLoginAndPassword:".oxd-text--span",
+           
         }
         return selectors
     }
@@ -21,6 +23,17 @@ class LoginPage{
     }
     checkAcessIvalid(){
         cy.get(this.selectorsList().wrongCredentialAlert)
+    }
+    checkAlertRequiredloginAndPassword(){
+        cy.get(this.selectorsList().requiredAlertLoginAndPassword).eq(0)
+        cy.get(this.selectorsList().requiredAlertLoginAndPassword).eq(1)
+    }
+    checkAlertRequiredLogin(){
+        cy.get(this.selectorsList().requiredAlertLoginAndPassword).eq(0)
+       
+    }
+    checkAlertRequiredPassword(){
+        cy.get(this.selectorsList().requiredAlertLoginAndPassword).eq(0)
     }
 }
 

@@ -3,8 +3,28 @@
     "username": "Admin",
     "password": "admin123"
   },
-  "userFail":{
+  "userAndPasswordFail":{
     "username": "teste",
     "password": "teste"
+  },
+  "userAndPasswordEmpty":{
+    "username": " ",
+    "password": " "
+  },
+  "userDoneAndpasswordWrong":{
+    "username": "Admin",
+    "password": "teste"
+  },
+  "userWrongAndpasswordDone":{
+    "username": "Edmi0",
+    "password": "admin123"
+  },
+  "userEmptyAndpasswordDone":{
+    "username": " ",
+    "password": "admin123"
+  },
+  "userDoneAndpasswordEmpty":{
+    "username": "Admin",
+    "password": " "
   }
 }

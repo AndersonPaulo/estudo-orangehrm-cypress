@@ -20,6 +20,7 @@ class MyInfoPage {
                 browserButton:".oxd-file-button",
                 inputFileButton:"[data-v-1b0f05a0='']",
                 textAreaField: ".oxd-textarea"
+                
             }
 
         return selector
