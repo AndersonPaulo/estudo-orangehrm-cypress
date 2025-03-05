@@ -39,7 +39,20 @@ O objetivo deste projeto é desenvolver e validar casos de testes para as seguin
    npx cypress run
    ```
 
-## Contribuição
+## Abaixo estão as páginas que foram testadas :
 
-Este repositório é destinado a estudos, portanto, contribuições e sugestões são sempre bem-vindas!
+# Login 
 
+<img src="./imagens/Login-Page.png alt=" alt="login ">
+
+# Personal Details
+
+<img src="./imagens/MyInfo-PersonalDetails.png" alt="Personal Details">
+
+# Conact Details
+
+
+<img src="./imagens/MyInfo-conactDetails.png" alt="Conact Details">
+
+
+## Casos de testes :
