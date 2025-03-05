@@ -43,7 +43,7 @@ O objetivo deste projeto é desenvolver e validar casos de testes para as seguin
 
 # Login 
 
-<img src="./imagens/Login-Page.png alt=" alt="login ">
+<img src="./imagens/Login-Page.png" alt="login ">
 
 # Personal Details
 
