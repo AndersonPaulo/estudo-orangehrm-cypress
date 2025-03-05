@@ -24,7 +24,7 @@ class MyInfoPageDetail{
         cy.get(this.selectorsList().genericField).eq(3).type(province)
         cy.get(this.selectorsList().genericField).eq(4).type(zip)
         cy.get(this.selectorsList().genericField).eq(5).click()
-        cy.get(this.selectorsList().selectCountry).click()//.eq(0).select(5)
+        cy.get(this.selectorsList().selectCountry).click()
 
     }
     Telephones(home,mobile,work){
@@ -42,7 +42,12 @@ class MyInfoPageDetail{
         cy.get(this.selectorsList().addButton).eq(3).click()
         cy.get(this.selectorsList().inputFileButton).eq(0).selectFile('bruite.png',{action: "select",force: true})
         cy.get(this.selectorsList().genericField).eq(12).type(text)
-        cy.get(this.selectorsList().submitButton).eq(1).click
+        
+
+    }
+    RequiredForm(){
+        cy.get(this.selectorsList().submitButton).eq(0).click()
+        cy.get(this.selectorsList().submitButton).eq(1).click()
 
     }
 

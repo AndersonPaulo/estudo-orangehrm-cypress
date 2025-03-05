@@ -54,5 +54,20 @@ O objetivo deste projeto é desenvolver e validar casos de testes para as seguin
 
 <img src="./imagens/MyInfo-conactDetails.png" alt="Conact Details">
 
-
+   
 ## Casos de testes :
+
+# Login
+
+<img src="./imagens/Login-Page-testeCases.png" alt="login Tests">
+
+# Change Picture
+
+<img src="./imagens/MyInfo-ChangeProfilePicture.png" alt="Change Picture tests">
+
+# Personal Details
+
+<img src="./imagens/MyInfo-PersonalDetails-testCases.png" alt="Personal Details tests">
+
+# Contact Details
+<img src="./imagens/MyInfo-conactDetails-testCases.png" alt=" Contact Details tests">

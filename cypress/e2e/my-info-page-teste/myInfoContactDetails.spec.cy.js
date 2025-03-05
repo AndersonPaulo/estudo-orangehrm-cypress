@@ -19,7 +19,7 @@ describe('Preenchimento dos dados de contato do usuário', () =>{
         MyInfoPageDetail.Telephones(chance.phone({ formatted: false }),chance.phone({ formatted: false }),chance.phone({ formatted: false }))
         MyInfoPageDetail.Emails(chance.email(),chance.email())
         MyInfoPageDetail.AddAttachment(chance.sentence())
-
+        MyInfoPageDetail.RequiredForm()
 
     })
 
